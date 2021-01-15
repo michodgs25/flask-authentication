@@ -38,6 +38,14 @@
         </nav>
         <!--Mobile nav, two tabs, allow user to access login& registration-->
         <ul class="sidenav" id="mobile-demo">
+            <div class="user-view">
+                <div class="background">
+                    <!--Sprint title& image, increase user interaction-->
+                    <img src="{{url_for('static', filename='images/sidenav/sidenav.jpg')}}"
+                        alt="Male athlete in running motion">
+                </div>
+                <h5 class="side-title">Authenticate</h5>
+            </div>
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('login') }}">Login</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>

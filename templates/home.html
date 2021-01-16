@@ -25,7 +25,7 @@
     <h3 class="center-align">Login</h3>
 
     <div class="row">
-        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
             <div class="card-panel">
                 <!-- username -->
                 <div class="row">
@@ -48,13 +48,13 @@
                 <!-- Submit details to platform-->
                 <div class="row">
                     <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
-                        Register <i class="fas fa-sign-in-alt"></i>
+                        Login <i class="fas fa-sign-in-alt"></i>
                     </button>
                 </div>
             </div>
         </form>
     </div>
-    <h3 class="center-align">Register</h3>
+    <h3 class="center-align">Login</h3>
 
     <div class="row">
         <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
@@ -80,7 +80,7 @@
                 <!--User must confirm password, prevent any typos-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <i class="fas fa-user-lock prefix light-blue-text text-darken-4"></i>
+                        <i class="fas fa-lock prefix light-blue-text text-darken-4"></i>
                         <input id="confirm_password" name="confirm_password" type="password" minlength="5"
                             maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                         <label for="password">Confirm Password</label>
@@ -89,7 +89,7 @@
                 <!-- Submit details to platform-->
                 <div class="row">
                     <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
-                        Register <i class="fas fa-sign-in-alt"></i>
+                        Register Account <i class="fas fa-user-lock"></i>
                     </button>
                 </div>
             </div>
